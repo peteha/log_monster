@@ -12,7 +12,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 # Initialize connection pool
 conn = aiohttp.TCPConnector(limit_per_host=100, limit=0, ttl_dns_cache=300)
 msg_pp = 50
-tot_dblks = 100000
+tot_dblks = 10000
 PARALLEL_REQUESTS = 100
 sess_uuid = uuid.uuid4()
 hostname = socket.gethostname()
